@@ -42,7 +42,7 @@ This Python project is designed to split large videos into smaller segments, scr
 ## Usage
 
 ### **Mass Creation**
-- You **must** have an **equal** amount of **Audio Files and Video Files**
+
 - **Video file names need to be in increments of 1**
     - Ex. You have 4 videos they would be named the following:
         - **Video File Names:** *1.mp4*, *2.mp4*, *3.mp4*, *4.mp4*
