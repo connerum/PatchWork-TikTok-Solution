@@ -15,10 +15,16 @@ This Python project is designed to split large videos into smaller segments, scr
 **Mass Creation**
 - Load user-selected Reddit URLs from a text file and generate text-to-speech audio files in bulk.
 - Load user-selected videos and replace their original audio with the generated text-to-speech audio files.
+
+
 **Splitter**
 - Easily split large videos into multiple shorter segments.
+
+
 **Cropper**
 - Center and crop videos to fit TikTok's dimensions.
+
+
 **Web API**
 - Use Flask to run a basic HTML page where users can enter a Reddit post URL and YouTube video URL.
 - The audio and video files will be downloaded, and a text-to-speech audio file will be generated.
