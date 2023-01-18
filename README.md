@@ -12,18 +12,16 @@ This Python project is designed to split large videos into smaller segments, scr
 
 
 ## Features
+
 **Mass Creation**
 - Load user-selected Reddit URLs from a text file and generate text-to-speech audio files in bulk.
 - Load user-selected videos and replace their original audio with the generated text-to-speech audio files.
 
-
 **Splitter**
 - Easily split large videos into multiple shorter segments.
 
-
 **Cropper**
-- Center and crop videos to fit TikTok's dimensions.
-
+- **COMING SOON** <!-- Center and crop videos to fit TikTok's dimensions. -->
 
 **Web API**
 - Use Flask to run a basic HTML page where users can enter a Reddit post URL and YouTube video URL.
@@ -41,3 +39,35 @@ This Python project is designed to split large videos into smaller segments, scr
   pip3 install -r requirements.txt
 ```
     
+## Usage
+
+### **Mass Creation**
+- You **must** have an **equal** amount of **Audio Files and Video Files**
+- **Video file names need to be in increments of 1**
+    - Ex. You have 4 videos they would be named the following:
+        - **Video File Names:** *1.mp4*, *2.mp4*, *3.mp4*, *4.mp4*
+- Reddit URLs **need** to be placed in the file **"links.txt"**
+- Video files **need** to be placed in the directory **"uneditedVideos"**
+
+After verifying that these steps are followed, run the **"Mass.py"** script & the mass creation of videos will begin
+
+- The generated Text-to-Speech audio files will be saved to the directory **"ttsAudio"**
+- The completed videos will be saved to the directory **"stories"**
+
+
+### **Splitter**
+- Place your uncut video file in the directory **"UnsplitVideo"**
+- Edit the **"times.txt"** file with the segments you want your video to be cut into
+    - You must write these segments as **seconds**
+    - Ex. To cut a 3-minute video into three one-minute videos, you would put the following lines in **"times.txt"**:
+        - 0-60
+        - 60-120
+        - 120-180
+
+After verifying that these steps are followed, run the **"Splitter.py"** script & the splitting of your video will begin
+
+- The split videos are saved in the **"SplitVideos"** directory
+
+
+### **Web API**
+- Run the script **"FlaskWebAPI.py"**
